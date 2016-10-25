@@ -1,0 +1,24 @@
+{{
+
+function getAmountGrass(weight){
+
+    return (((weight/100) * 3) * 30).toFixed(2);;
+
+}
+
+function getAnnualCost(weight){
+
+    return ((((weight/100) * 3) * 365) * 0.20).toFixed(2);;
+
+}
+}}
+{{~it.cows :cow:index}}
+<tr class="cow_{{=cow.attributes.id}}">
+    <td>{{=cow.attributes.id}}</td>
+    <td>{{=cow.attributes.weight}}</td>
+    <td>{{=cow.attributes.age}}</td>
+    <td>R$ {{=cow.attributes.price}}</td>
+    <td>{{=getAmountGrass(cow.attributes.weight)}} kg</td>
+    <td>R$ {{=getAnnualCost(cow.attributes.weight)}}</td>
+</tr>
+{{~}}

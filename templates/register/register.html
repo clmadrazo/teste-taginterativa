@@ -1,0 +1,24 @@
+<div class="content content-fluid">
+    <form name="cow" method="POST" id="cow">
+        <div class="container">
+
+            <div class="module container-fluid module-register">
+                <input onkeypress="return onlyNumber(event)" required class="form-control weight" id="weight" type="text" name="weight" placeholder="Peso">
+                <input onkeypress="return onlyNumber(event)" required class="form-control" id="age" type="text" name="age" placeholder="Idade">
+                <input type="text" name="price" required class="form-control price" id="price" placeholder="Preço">
+                <button type="submit" class="btn btn-primary btn-submit disabled" style="width: 100%;"><span class="demo-btn-ico fa fa-check"></span> CADASTRAR</button>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    function onlyNumber(e) {
+        tecla = (document.all) ? e.keyCode : e.which;
+        if (tecla==8) return true;
+        patron =/[0-9]/;
+        te = String.fromCharCode(tecla);
+        return patron.test(te);
+    }
+</script>

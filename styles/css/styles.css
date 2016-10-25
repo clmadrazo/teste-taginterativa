@@ -1,0 +1,164 @@
+/*Reference imports */
+@import "webfont.css";
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
+	background: #f3f3f3;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 40px;
+	background-color: #565351;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+	padding: 40px 15px 0;
+}
+.container {
+	width: 95%;
+}
+.nav-custom {
+	float: none;
+}
+.navbar-brand {
+	margin-top: 0px;
+}
+.navbar-custom {
+	font-family: 'hk_groteskregular';
+	height: 64px;
+}
+.navbar-fixed-top {
+	border-width: 0;
+}
+.navbar-custom .navbar-nav > li {
+	padding: 7px 0;
+}
+
+.navbar-toggle {
+	margin-top: 16px;
+}
+.footer > .container {
+	padding-right: 15px;
+	padding-left: 15px;
+	font-family: 'hk_groteskregular';
+}
+p.text-muted {
+	color: #fff;
+	margin: 10px 0 0px;
+}
+.container .module {
+	position: relative;
+	border-radius: 3px;
+	border: 1px solid #efefef;
+	background: #fff;
+	margin-bottom: 20px;
+
+}
+.ui-pnotify .ui-pnotify-shadow {
+	margin-top: 60px;
+}
+
+/*Página de Cadastro*/
+.module-register {
+	width: 50%;
+	margin-top: 150px;
+	padding: 65px 30px 40px;
+}
+.module-register input{
+	margin-bottom: 10px;
+}
+
+.module-register::after {
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #959595;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	content: "Minha vaquinha";
+	margin-bottom: 25px;
+}
+
+/*Media*/
+@media screen and (min-width:768px) and (max-width:900px) {
+	/*Custom Template*/
+}
+@media (min-width:768px) {
+	/*Custom Template*/
+	.actionbar ul {
+		position: relative;
+		display: inline-block;
+		zoom: 1;
+		margin: 0 30px;
+		padding: 0;
+		list-style: none;
+	}
+	.actionbar ul li {
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		float: left;
+		display: inline;
+		margin-right: 24px;
+		border: none;
+		padding: 12px 23px;
+	}
+	.actionbar ul li a {
+		color: #333;
+		text-decoration: none;
+	}
+	.actionbar ul li a:hover,.actionbar ul li a:focus {
+		color: #60c8b0;
+	}
+	.actionbar ul::before {
+		display: block;
+		position: absolute;
+		font-family: FontAwesome;
+		font-size: 32px;
+		color: #fff;
+		line-height: 0;
+		text-align: center;
+		content: '\f0d7';
+		bottom: -8px;
+		z-index: 0;
+		width: 100%;
+		margin: 0 auto;
+		text-shadow: 0 2px 2px rgba(0,0,0,.15);
+		left: -220px;
+	}
+
+}
+@media (max-width:767px) {
+	/*Custom Template*/
+	.actionbar {
+		display: none;
+	}
+	li.dropdown {
+		display: none;
+	}
+	#navbar {
+		margin-top: 6px;
+		background: #f8f8f8;
+	}
+	.navbar-custom .navbar-nav > li {
+		padding: 0;
+	}
+}
+
