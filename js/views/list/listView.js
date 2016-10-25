@@ -81,7 +81,7 @@ define([
                 champion_message: function(id){
                     PNotify.removeAll();
                     new PNotify({
-                        text: "A melhor vaca tem id: "+id,
+                        text: "Em base ao melhor custo-benefício recomendamos a vaca com id: "+id,
                         hide: true,
                         buttons: {
                             closer: true,
